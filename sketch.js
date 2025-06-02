@@ -58,7 +58,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(768, 768);
+  createCanvas(windowHeight, windowWidth);
   colorMode(HSB);
 
   // 111.txt 초기화
