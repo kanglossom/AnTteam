@@ -136,6 +136,11 @@ function drawMainProgram() {
   if (phase === "heartBreak") {
     background(BGCOLOR);
 
+    fill('#ffffff');
+    textAlign(CENTER, BOTTOM);
+    textSize(min(width, height) * 0.03);
+    text("마우스로 하트를 네 번 조각낸 후 눌러줘", width / 2, height - 50);
+
     if (heartBroken) {
       updateAndDrawHeartFragments();
     } else {
